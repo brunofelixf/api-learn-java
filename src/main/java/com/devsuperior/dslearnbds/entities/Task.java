@@ -1,10 +1,10 @@
 package com.devsuperior.dslearnbds.entities;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
 import java.time.Instant;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "tb_task")
@@ -15,7 +15,7 @@ public class Task extends Lesson {
 	private Integer approvalCount;
 	private Double weight;
 	
-	@Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")	
+	@Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
 	private Instant dueDate;
 	
 	public Task() {

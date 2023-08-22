@@ -9,12 +9,8 @@ import java.util.Set;
 
 import com.devsuperior.dslearnbds.entities.pk.EnrollmentPK;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.EmbeddedId;
-import jakarta.persistence.Entity;
-import jakarta.persistence.ManyToMany;
-import jakarta.persistence.OneToMany;
-import jakarta.persistence.Table;
+import javax.persistence.*;
+
 
 @Entity
 @Table(name = "tb_enrollment")

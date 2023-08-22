@@ -1,16 +1,18 @@
 package com.devsuperior.dslearnbds.entities.pk;
 
+import java.io.Serializable;
 import java.util.Objects;
 
 import com.devsuperior.dslearnbds.entities.Offer;
 import com.devsuperior.dslearnbds.entities.User;
 
-import jakarta.persistence.Embeddable;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
+import javax.persistence.Embeddable;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+
 
 @Embeddable
-public class EnrollmentPK {
+public class EnrollmentPK implements Serializable {
 
 	@ManyToOne
 	@JoinColumn(name = "user_id")

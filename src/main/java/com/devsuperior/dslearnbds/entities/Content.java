@@ -1,7 +1,8 @@
 package com.devsuperior.dslearnbds.entities;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
 
 @Entity
 @Table(name = "tb_content")
